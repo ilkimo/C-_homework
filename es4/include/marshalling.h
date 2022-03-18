@@ -4,7 +4,6 @@
 
 #include "stdint.h"
 
-
 typedef unsigned char BYTE;
 
 typedef struct _Packet {

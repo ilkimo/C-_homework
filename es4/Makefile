@@ -6,7 +6,7 @@ TARGET_HEADERS = include/marshalling.h
 CFLAGS=-g -O0 -Wall -Wpedantic -Werror -I Unity/ -I include/
 COMMON_DEPS = Makefile
 
-all: $(TARGET) test
+all: $(TARGET) test run
 
 # rule to compile a .c in a .o
 #   $@ : the entire target of the rule (in this case: build/<filename>.o)

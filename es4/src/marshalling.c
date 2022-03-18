@@ -5,6 +5,10 @@
 uint8_t* marshal(Packet* p) {
     uint8_t* res = 0;
 
+    //use packet
+
+
+    free(p);
     return res; //TODO()
 }
 
