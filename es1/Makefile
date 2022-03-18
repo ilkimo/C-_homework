@@ -18,7 +18,9 @@ compile:
 	cmake --build .
 
 test:
-	@echo "--------------------------------------------------TESTING----------------------------------------------------"
+	@echo "\n\033[1;93m█ Testing project...\033[0m\n\n" &&\
+	cd build &&\
+	make test
 
 run:
 	@echo "\n\033[1;32m█ Running...\033[0m\n\n" &&\

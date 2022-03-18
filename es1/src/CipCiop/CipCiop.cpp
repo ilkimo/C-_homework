@@ -6,12 +6,6 @@ CipCiop::CipCiop(int x, int y, int min, int max) {
     this->y = y;
     this->min = min;
     this->max = max;
-
-    vector<string> solution = solve();
-
-    for(string str : solution) {
-        cout << str << endl;
-    }
 }
 
 vector<string> CipCiop::solve() {

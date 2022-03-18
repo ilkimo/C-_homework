@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/src/CipCiop//CMakeFiles/progress.marks
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CipCiop/all
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/tests//CMakeFiles/progress.marks
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CipCiop/clean
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,12 +113,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CipCiop/preinstall
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CipCiop/preinstall
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -127,42 +127,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CipCiop/CMakeFiles/CipCiop.dir/rule:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CipCiop/CMakeFiles/CipCiop.dir/rule
-.PHONY : src/CipCiop/CMakeFiles/CipCiop.dir/rule
+tests/CMakeFiles/TestCipCiop.dir/rule:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/TestCipCiop.dir/rule
+.PHONY : tests/CMakeFiles/TestCipCiop.dir/rule
 
 # Convenience name for target.
-CipCiop: src/CipCiop/CMakeFiles/CipCiop.dir/rule
-.PHONY : CipCiop
+TestCipCiop: tests/CMakeFiles/TestCipCiop.dir/rule
+.PHONY : TestCipCiop
 
 # fast build rule for target.
-CipCiop/fast:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CipCiop/CMakeFiles/CipCiop.dir/build.make src/CipCiop/CMakeFiles/CipCiop.dir/build
-.PHONY : CipCiop/fast
+TestCipCiop/fast:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/TestCipCiop.dir/build.make tests/CMakeFiles/TestCipCiop.dir/build
+.PHONY : TestCipCiop/fast
 
-CipCiop.o: CipCiop.cpp.o
-.PHONY : CipCiop.o
+TestCipCiop.o: TestCipCiop.cpp.o
+.PHONY : TestCipCiop.o
 
 # target to build an object file
-CipCiop.cpp.o:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CipCiop/CMakeFiles/CipCiop.dir/build.make src/CipCiop/CMakeFiles/CipCiop.dir/CipCiop.cpp.o
-.PHONY : CipCiop.cpp.o
+TestCipCiop.cpp.o:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/TestCipCiop.dir/build.make tests/CMakeFiles/TestCipCiop.dir/TestCipCiop.cpp.o
+.PHONY : TestCipCiop.cpp.o
 
-CipCiop.i: CipCiop.cpp.i
-.PHONY : CipCiop.i
+TestCipCiop.i: TestCipCiop.cpp.i
+.PHONY : TestCipCiop.i
 
 # target to preprocess a source file
-CipCiop.cpp.i:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CipCiop/CMakeFiles/CipCiop.dir/build.make src/CipCiop/CMakeFiles/CipCiop.dir/CipCiop.cpp.i
-.PHONY : CipCiop.cpp.i
+TestCipCiop.cpp.i:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/TestCipCiop.dir/build.make tests/CMakeFiles/TestCipCiop.dir/TestCipCiop.cpp.i
+.PHONY : TestCipCiop.cpp.i
 
-CipCiop.s: CipCiop.cpp.s
-.PHONY : CipCiop.s
+TestCipCiop.s: TestCipCiop.cpp.s
+.PHONY : TestCipCiop.s
 
 # target to generate assembly for a file
-CipCiop.cpp.s:
-	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CipCiop/CMakeFiles/CipCiop.dir/build.make src/CipCiop/CMakeFiles/CipCiop.dir/CipCiop.cpp.s
-.PHONY : CipCiop.cpp.s
+TestCipCiop.cpp.s:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/TestCipCiop.dir/build.make tests/CMakeFiles/TestCipCiop.dir/TestCipCiop.cpp.s
+.PHONY : TestCipCiop.cpp.s
 
 # Help Target
 help:
@@ -173,10 +173,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... CipCiop"
-	@echo "... CipCiop.o"
-	@echo "... CipCiop.i"
-	@echo "... CipCiop.s"
+	@echo "... TestCipCiop"
+	@echo "... TestCipCiop.o"
+	@echo "... TestCipCiop.i"
+	@echo "... TestCipCiop.s"
 .PHONY : help
 
 

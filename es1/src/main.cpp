@@ -59,5 +59,10 @@ int main(int argc, char** argv)
                               atoi(argv[3]),
                               atoi(argv[4]));
 
+    vector<string> solution = problem.solve();
+    for(string str : solution) {
+        cout << str << endl;
+    }
+
     return 0;
 }
