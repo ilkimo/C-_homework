@@ -1,4 +1,4 @@
-APPLICATION=C__homework
+APPLICATION=es0_template
 
 # doing some weird stuff to accept args from Makefile
 args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
@@ -18,8 +18,10 @@ compile:
 	cmake --build .
 
 test:
-	@echo "--------------------------------------------------TESTING----------------------------------------------------"
+	@echo "\n\033[1;93m█ Testing project...\033[0m\n\n" &&\
+	cd build &&\
+	make test
 
 run:
 	@echo "\n\033[1;32m█ Running...\033[0m\n\n" &&\
-	./build/$(APPLICATION) $(call args, Hello Template)
+	./build/src/$(APPLICATION) $(call args, Hello Template)
