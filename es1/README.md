@@ -1,4 +1,7 @@
 # Cip & Ciop
+## Language used
+C++
+
 ## objective
 Given x, y, min and max, create an algorithm that, taken the numbers between min and max, produces
 a sequence of strings formed in the following way:

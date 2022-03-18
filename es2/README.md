@@ -1,4 +1,7 @@
 # Missing Numbers
+## Language used
+Haskell
+
 ## objective
 Given a sequence of integers X, create an algorithm that produces a sequence of integers Y,
 composed of all the numbers NOT present in X between min (X) and max (X).
@@ -7,30 +10,28 @@ More formally: let X be included in N (together with natural numbers),
 construct Y included in N such that for each element x € N and x not € X => x € Y.
 
 ## build
-To build this application just execute
+To build this application, installing [ghci](https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux) is required, something like
 ```
-make compile
+sudo apt-get install -y ghc-ghci
 ```
-or to **build, test and run**, just use
-```
-make
-```
-
-## test
-```
-make test
-```
+should make the job
 
 ## run
-To execute a prepared execution, run:
+To open ghci
 ```
-make run
+ghci
 ```
-To insert custom args, run:
+To load .hs file
 ```
-make run <number1> <number2> <number3> ...
+:l missingNumbers.hs
 ```
-without "<>" chars. So for example:
+To test the program:
 ```
-make run 5 8 1 22
+missingNumbers []
+missingNumbers [1]
+missingNumbers [10, 5, 1]
+```
+To exit ghci
+```
+ctrl-D
 ```
