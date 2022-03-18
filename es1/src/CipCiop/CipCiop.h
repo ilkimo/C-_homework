@@ -2,6 +2,7 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -14,5 +15,7 @@ public:
 
 private:
     int x, y, min, max;
+
+    vector<string> solve();
 };
 
