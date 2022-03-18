@@ -1,8 +1,8 @@
 # C++_homework
-Repo containing some C++ exercises
+Repo containing some exercises
 
 ## Configure
-To install some dependencies (for example: google tests), run:
+To install googletest's dependency for es1, run:
 ```
 make configure
 ```
