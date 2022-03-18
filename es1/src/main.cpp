@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include "CipCiop.h"
 
 using namespace std;
 
@@ -52,6 +53,11 @@ int main(int argc, char** argv)
     } catch(std::invalid_argument const& exception) {
         cout << exception.what() << endl;
     }
+
+    CipCiop problem = CipCiop(atoi(argv[1]),
+                              atoi(argv[2]),
+                              atoi(argv[3]),
+                              atoi(argv[4]));
 
     return 0;
 }

@@ -1,4 +1,4 @@
-APPLICATION=CipCiop
+APPLICATION=es1
 
 # doing some weird stuff to accept args from Makefile
 args = `arg="$(filter-out $@,$(MAKECMDGOALS))" && echo $${arg:-${1}}`
@@ -22,4 +22,4 @@ test:
 
 run:
 	@echo "\n\033[1;32m█ Running...\033[0m\n\n" &&\
-	./build/$(APPLICATION) $(call args, 3 4 10 20)
+	./build/src/$(APPLICATION) $(call args, 3 4 10 20)

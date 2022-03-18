@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/src//CMakeFiles/progress.marks
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named es1
+# Convenience name for target.
+src/CMakeFiles/es1.dir/rule:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/es1.dir/rule
+.PHONY : src/CMakeFiles/es1.dir/rule
 
-# Build rule for target.
-es1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 es1
+# Convenience name for target.
+es1: src/CMakeFiles/es1.dir/rule
 .PHONY : es1
 
 # fast build rule for target.
 es1/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/es1.dir/build.make src/CMakeFiles/es1.dir/build
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/es1.dir/build.make src/CMakeFiles/es1.dir/build
 .PHONY : es1/fast
 
-#=============================================================================
-# Target rules for targets named CipCiop
+main.o: main.cpp.o
+.PHONY : main.o
 
-# Build rule for target.
-CipCiop: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CipCiop
-.PHONY : CipCiop
+# target to build an object file
+main.cpp.o:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/es1.dir/build.make src/CMakeFiles/es1.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-# fast build rule for target.
-CipCiop/fast:
-	$(MAKE) $(MAKESILENT) -f src/CipCiop/CMakeFiles/CipCiop.dir/build.make src/CipCiop/CMakeFiles/CipCiop.dir/build
-.PHONY : CipCiop/fast
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/es1.dir/build.make src/CMakeFiles/es1.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/es1.dir/build.make src/CMakeFiles/es1.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -150,8 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CipCiop"
 	@echo "... es1"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/il_kimo/Desktop/tutto/sposta_in_hdd/C-_homework/es1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

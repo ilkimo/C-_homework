@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
-project(CipCiop)
+project(es1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CipCiop src/main.cpp)
+add_subdirectory(src)
